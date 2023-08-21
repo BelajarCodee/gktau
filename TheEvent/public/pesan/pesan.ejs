@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Message Page</title>
+
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .centered-card {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9999999;
+    }
+
+    .custom-card {
+      border: 2px solid #17a2b8; /* Change the border color */
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a shadow */
+      padding: 20px; /* Add some padding */
+    }
+
+    .custom-button {
+      background-color: #17a2b8; /* Change the button color */
+      color: white; /* Change the text color */
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .custom-button:hover {
+      background-color: #138496; /* Darker color on hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="centered-card">
+    <div class="card custom-card">
+      <div class="card-body">
+        <h1 class="card-title text-center">Message</h1>
+        <div class="py-3"><%= msg %></div>
+
+        <a href="<%= url %>">
+          <button class="btn btn-primary w-100" hr>Next</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="/public/assets//vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- <script>
+    function oke() {
+      history.back();
+      
+    }
+  </script> -->
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daftar Semua User</title>
+</head>
+<body>
+  <h1>Daftar Semua User</h1>
+  <ul>
+    <% let index = 1; %>
+    <% users.forEach(user => { %>
+      <li><%= index %></li>
+      <li><%= user.name %></li>
+      <li><%= user.email %> </li>
+      <li><%= user.role %> </li>
+      <li><img src="<%= user.qr %>" width="100px"></li>
+      <li><%= user.hadir || 'belum' %></li>
+      <li><%= user.makanSiang || 'belum' %></li>
+      <li><%= user.Snack || 'belum' %></li>
+      <br>
+      <br>
+      <br>
+      <% index++; %>
+    <% }); %>
+  </ul>
+</body>
+</html>
